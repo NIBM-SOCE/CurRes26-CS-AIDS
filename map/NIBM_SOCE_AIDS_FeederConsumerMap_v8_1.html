@@ -203,14 +203,14 @@
 
   <!-- MASTHEAD -->
   <div class="mast">
-    <div class="eyebrow">NIBM School of Computing and Engineering &nbsp;&middot;&nbsp; Curriculum Restructuring 2026/2027 &nbsp;&middot;&nbsp; <span class="vchip">v8.1</span></div>
+    <div class="eyebrow">NIBM School of Computing and Engineering &nbsp;&middot;&nbsp; Curriculum Restructuring 2026/2027 &nbsp;&middot;&nbsp; <span class="vchip">2026 Issue</span></div>
     <h1>Feeder and Consumer Map - Computer Science with Artificial Intelligence and Data Science</h1>
     <div class="bars"><span class="b1"></span><span class="b2"></span></div>
     <p class="sub">A shared SLQF Level 3 (Diploma) and Level 4 (HND) stage that progresses to one of two validated Coventry University degrees: Computer Science with Data Science, or Computer Science with Applied Artificial Intelligence. The two degrees share a common core and diverge into variant-specific modules. Every module is placed by what prepares it and what it prepares.</p>
     <div class="metaline">
       <span><b>Progression (two routes):</b> BSc (Hons) CS with Data Science &nbsp;|&nbsp; BSc (Hons) CS with Applied Artificial Intelligence (NIBU030)</span>
       <span><b>Validation partner:</b> Coventry University</span>
-      <span><b>Architecture:</b> v8.1 (module records v2.1)</span>
+      <span><b>Architecture:</b> Module records v2.2, issued 13 August 2026</span>
       <span><b>Credit basis:</b> SLQF - 1 credit = 50 notional hours (Industrial Training = 100)</span>
       <span><b>Working language:</b> Python (pathway instantiation of the cluster commons)</span>
       <span><b>Diploma exit:</b> 41 credits / 13 modules &nbsp;&middot;&nbsp; HND exit: 43 credits / 15 modules</span>
@@ -275,6 +275,8 @@
       </div>
 
       <div class="cap-note"><b>Continuing totals shown.</b> The Diploma and HND exit awards each add a separate 4-credit Exit Block taken only by exiting students (Diploma exit 41 credits / 13 modules; HND exit 43 credits / 15 modules). CREST is a mandatory non-credit component and is not counted in the Year 2 credit total. A student progresses to one degree; the Data Science and Applied AI variant modules are alternatives, both prepared by the shared HND. Digital Electronics and Logic Design is carried as a common for cohort formation and has no Coventry feeder in this pathway.</div>
+      <div class="cap-note"><b>Shared modules.</b> The institution-wide common modules, the cluster commons, the Integrative Skills modules and the exit-block modules are delivered to more than one pathway and their specifications are held in common. No single pathway may vary a shared module's scope, learning outcomes or assessment; changes require the agreement of every pathway that delivers it.</div>
+      <div class="cap-note"><b>FHEQ (comparability, reference only).</b> The FHEQ column is carried for comparability and reference only. FHEQ is a holistic framework operating at programme and award level; it is not applied module by module to the NIBM-delivered years, where SLQF is the binding framework. "Higher National Diploma" is the award-certificate term and reflects TVEC-side vocabulary; SLQF itself uses "Higher Diploma" for the same level. UK usage of "HND" denotes a qualification of a defined size and character under FHEQ, and no equivalence to it is asserted here: the column states a comparison, not a claim.</div>
 
       <!-- DETAIL PANEL -->
       <div class="panel" id="panel">
@@ -317,8 +319,7 @@
 
 <script>
 /* ============================================================
-   DATA - Computer Science with Artificial Intelligence and Data Science (AI&DS) pathway, v8.1
-   (module records v2.1). Shared HND feeding two Coventry degrees:
+   DATA - Computer Science with Artificial Intelligence and Data Science (AI&DS) pathway (module records v2.2). Shared HND feeding two Coventry degrees:
    BSc CS with Data Science and BSc CS with Applied Artificial Intelligence.
    Coventry structures from the CS-DS and Applied-AI descriptor sets.
    variant: shared | ds | ai
@@ -377,10 +378,10 @@ const MODS = [
    exit:'Hardware and digital-logic literacy in the Diploma-level profile.'},
 
   {id:'prog',year:1,title:'Programming Concepts',code:'NB-SOCE-L3-CC-TT-01',cr:4,type:'csc',typeLabel:'Common / Taught',lang:'Python',
-   role:'The broadest single feeder in Year 1 - the common language base for the applied pathway modules. Taught in Python here, so the pathway runs on one language from first exposure through to production.',
+   role:'The broadest single feeder in Year 1 - the common language base for the applied pathway modules. Taught in Python here, so the pathway runs on one language from first exposure through to production. The module now states an object-oriented strand, held in common across the carrying pathways; this pathway has no downstream requirement for it and no dependency on it is drawn.',
    feeds:[{to:'pdsa1',note:'language fluency'},{to:'ade',note:'implementation'},{to:'mle'},{to:'wat'},{to:'isf',note:'implementation'},{to:'cu_cyber',note:'build a working secure system'},{to:'cu_ds',note:'tooling'},{to:'cu_agile',note:'prior development experience (Applied AI)'}],
-   covers:'Production-language programming; control and data structures in code; functions and modularity; the working language and development tooling.',
-   excludes:'Data-structure and algorithm depth (PDSA I); pathway-owned applied stacks and secure-coding depth.',
+   covers:'Programming fundamentals in a production language; the pathway working language and its development tooling; control structures, functions and modular organisation; core data structures in code, including collections; object-oriented programming - classes and objects, encapsulation, inheritance, polymorphism and interface-style abstraction, expressed in the pathway working language; program design, testing and debugging practice.',
+   excludes:'Data-structure and algorithm implementation depth (Programming, Data Structures and Algorithms I); object-oriented design method, architectural styles and design patterns; secure-coding depth; pathway-owned applied stacks.',
    exit:'Programming competency evidence for the Diploma-level profile.'},
 
   {id:'dmms',year:1,title:'Data Models and Management Systems',code:'NB-SOCE-L3-CC-TT-02',cr:4,type:'csc',typeLabel:'Common / Taught',
@@ -393,14 +394,14 @@ const MODS = [
   {id:'ecs1',year:1,title:'Effective Communication Skills I',code:'NB-SOCE-L3-CM-IS-01',cr:2,type:'int',typeLabel:'Common / Integrative Skills',
    role:'',
    feeds:[{to:'ecs2'},{to:'cu_ecs3',note:'the numbered communication spine'}],
-   covers:'Foundational written and verbal communication; audience awareness; introductory professional presentation.',
-   excludes:'Advanced interpersonal and reflective communication (ECS II and Level 5 ECS 3).',
+   covers:'Foundational written and spoken communication for academic and professional purposes; audience awareness and adaptation; introductory professional presentation; communication within a team.',
+   excludes:'Advanced interpersonal, reflective and workplace communication (Effective Communication Skills II, and NB5006CEM at Level 5); entrepreneurship and innovation content (CREST).',
    exit:'Professional-communication component of the Diploma-level profile.'},
 
   {id:'cproj',year:1,title:'Creative Project',code:'NB-SOCE-L3-CM-IS-02',cr:3,type:'int',typeLabel:'Common / Integrative Skills',
    role:'',
    feeds:[{to:'cap',note:'prior supervised-project experience'},{to:'cu_project',note:'the project and independent-work spine'}],
-   covers:'Supervised project work; ideation and delivery; presentation of outcomes; project ownership.',
+   covers:'A facilitated Year 1 project integrating Year 1 learning; ideation, scoping and planning; supervised build and iteration; presentation and demonstration of outcomes; project ownership and structured reflection. Participation mode: a team-based build with an individually graded reflective component, with individual contribution defined during planning and evidenced through a contribution log.',
    excludes:'Pathway-specific applied capstone depth (Capstone Project); degree-level independent research (Level 6 Project).',
    exit:'Project and portfolio evidence for the Diploma-level profile.'},
 
@@ -448,7 +449,7 @@ const MODS = [
    exit:'Core applied-ML competency in the AI&DS HND-level profile.'},
 
   {id:'aai',year:2,title:'Applied Artificial Intelligence',code:'NB-SOCE-L4-AD-TT-03',cr:4,type:'swe',typeLabel:'Pathway / Taught',
-   role:'Retitled at v8.1 from Applied AI and Deep Learning, aligning with the Applied AI degree title. Carries the deep-learning core.',
+   role:'Retitled from Applied AI and Deep Learning, aligning with the Applied AI degree title. Carries the deep-learning core.',
    feeds:[{to:'cu_nn',note:'both degrees'},{to:'cu_robots',note:'agent and applied-AI depth (Applied AI)'},{to:'cu_aisec',note:'the ML literacy needed to attack and defend models (Applied AI)'}],
    covers:'Neural-network fundamentals; deep-learning architectures at applied level (including convolutional networks); applied gradient-descent training; deep-learning frameworks; reinforcement learning at awareness level.',
    excludes:'The machine-learning lifecycle and engineering (Machine Learning Engineering); symbolic reasoning and agents (Intelligent Systems and Reasoning); AI service consumption and integration (the use-not-build side, SE pathway territory).',
@@ -483,7 +484,7 @@ const MODS = [
    exit:'Data-communication competency in the AI&DS HND-level profile.'},
 
   {id:'tsf',year:2,title:'Time Series and Forecasting',code:'NB-SOCE-L4-AD-TT-08',cr:2,type:'swe',typeLabel:'Pathway / Taught',
-   role:'New at v8.1. Supplies the temporal strand of the Level 6 Data Visualisation chain in-house.',
+   role:'Newly introduced. Supplies the temporal strand of the Level 6 Data Visualisation chain in-house.',
    feeds:[{to:'cu_dataviz',note:'time-series and ARIMA demand (Data Science)'},{to:'cu_statds',soft:true,note:'temporal data (Data Science)'},{to:'cu_ml',soft:true,note:'temporal data'}],
    covers:'Time-series structure (trend, seasonality, stationarity); decomposition; ARIMA-family models at applied level; forecasting workflow and evaluation; temporal visualisation of modelled series.',
    excludes:'Deep-learning sequence models (Applied Artificial Intelligence); generalised linear models; general visual design and storytelling (Data Visualisation and Insight).',
@@ -491,16 +492,16 @@ const MODS = [
 
   {id:'crest',year:2,title:'Entrepreneurship, Creativity and Innovation (CREST)',code:'NB-SOCE-L4-CM-IS-01',cr:0,type:'int',typeLabel:'Common / Integrative Skills',noncredit:true,
    role:'Mandatory non-credit completion component; enterprise-skills evidence without credit contribution.',
-   feeds:[{to:'cu_lead',note:'the entrepreneurship and professional-practice thread'}],
-   covers:'Enterprise thinking; creativity and innovation methods; opportunity identification.',
-   excludes:'Degree-level leadership theory and organisational evaluation (Level 6 Leadership and Entrepreneurial Practice).',
+   feeds:[{to:'cu_lead',note:'the entrepreneurship and professional-practice strand'}],
+   covers:'Entrepreneurship foundations and enterprise thinking; creativity and ideation practice; innovation processes and methods; opportunity identification and evaluation; taking an idea to a stated value proposition and pitching it.',
+   excludes:'Degree-level leadership and entrepreneurial theory (NB6002CEM); project-management and business practice (Business and Project Management Practice on the SE pathway); professional communication (Effective Communication Skills II).',
    exit:'Mandatory completion component of the HND award.'},
 
   {id:'ecs2',year:2,title:'Effective Communication Skills II',code:'NB-SOCE-L4-CM-IS-02',cr:2,type:'int',typeLabel:'Common / Integrative Skills',
    role:'',
    feeds:[{to:'cu_ecs3',note:'the numbered communication spine'}],
-   covers:'Advanced interpersonal communication; assertiveness; reflective practice; audience-adaptive professional communication.',
-   excludes:'Degree-level interpersonal and emotional-intelligence depth (Level 5 ECS 3).',
+   covers:'Advanced professional communication in workplace and organisational settings; technical and business reporting and documentation; interview and professional-dialogue performance; interpersonal communication, assertiveness and reflective practice.',
+   excludes:'Academic-writing and research-readiness preparation (Capstone Project); the interpersonal-theory and emotional-intelligence depth of NB5006CEM; entrepreneurship content (CREST); pathway technical content.',
    exit:'Communication competency in the HND-level profile.'},
 
   {id:'cap',year:2,title:'Capstone Project',code:'NB-SOCE-L4-AD-SK-01',cr:5,type:'skl',typeLabel:'Pathway / Skills',
@@ -744,7 +745,7 @@ cuRows(['cu_dataviz','cu_statds'],'Level 6 - Data Science degree only');
 cuRows(['cu_aisec','cu_robots'],'Level 6 - Applied AI degree only');
 
 document.getElementById('foot').innerHTML =
- 'Computer Science with Artificial Intelligence and Data Science - Feeder and Consumer Map, v8.1 (module records v2.1). The shared Years 1 and 2 HND stage feeds two validated Coventry degrees (Data Science; Applied Artificial Intelligence), each 120 + 120 credits at FHEQ Levels 5 and 6. '+
+ 'Computer Science with Artificial Intelligence and Data Science - Feeder and Consumer Map, (module records v2.2). The shared Years 1 and 2 HND stage feeds two validated Coventry degrees (Data Science; Applied Artificial Intelligence), each 120 + 120 credits at FHEQ Levels 5 and 6. '+
  'Coventry structures are taken from the CS-with-Data-Science and CS-with-Applied-AI module descriptor sets. Robots and Intelligent Agents carries a code pending formal assignment. '+
  'Credit values follow the SLQF (2015) basis of 50 notional hours per credit (Industrial Training 100); values, hours and assessment weightings are confirmed at module-specification stage. This document maps prerequisite and feeder relationships only. '+
  'Generated '+new Date().toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'})+'.';
